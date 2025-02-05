@@ -1,0 +1,8 @@
+.intro {
+    position: absolute;
+    color: white;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
