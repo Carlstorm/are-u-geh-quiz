@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 export default function Penis({ position = [0, 0, 0], rotation = [0, 0, 0] }) {
-  const { nodes } = useGLTF("/test2.glb");
+  const { nodes } = useGLTF("https://raw.githubusercontent.com/Carlstorm/are-u-geh-quiz/gh-pages/test2.glb");
   const penisRef = useRef();
 
   useFrame(() => {
@@ -22,4 +22,4 @@ export default function Penis({ position = [0, 0, 0], rotation = [0, 0, 0] }) {
   );
 }
 
-useGLTF.preload("/test.glb");
+useGLTF.preload("https://raw.githubusercontent.com/Carlstorm/are-u-geh-quiz/gh-pages/test2.glb");

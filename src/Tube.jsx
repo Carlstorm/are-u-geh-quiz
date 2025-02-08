@@ -32,8 +32,7 @@ export default function Tube({ setPenisPosition, setPenisRotation, state }) {
         const lastPoint = points[points.length - 1];
         const firstPoint = points[0];
         const target = targetPointRef.current.clone();
-        console.log(state)
-        var mod = state*10 ?? 1;
+        var mod = state*10;
         const newPoint = lastPoint.clone().lerp(target, 0.001*mod);
   
         const resamplePoints = (points, numPoints) => {

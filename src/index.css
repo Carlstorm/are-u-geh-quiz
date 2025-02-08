@@ -1,14 +1,23 @@
+@font-face {
+  font-family: 'theFont';
+  src: local('Segoe Print'), url(./segoeprint.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #root {
   height: 100vh;
   width: 100vw;
   position: relative;
+  color: white;
 }
 
 body {
+  font-family: theFont;
   margin: 0;
   height: 100%;
   width: 100%;
-  background: #87cdcd;
+  background: #91e1d7;
   overflow: hidden;
 }
 

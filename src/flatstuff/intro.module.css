@@ -1,8 +1,12 @@
 .intro {
     position: absolute;
-    color: white;
-    margin: 0;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 40%;
     left: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    justify-content: center;
+    align-items: center;
 }

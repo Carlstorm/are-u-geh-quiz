@@ -1,11 +1,14 @@
+import Button from './inputs/Button'
 import style from './intro.module.css'
+import IntroHeader from './IntroHeader'
 
-export default function Intro({setState, state}) {
+export default function Intro({AddProgress}) {
     return (
         <div className={style.intro}>
-            <p className={style.intro_text}>Are you gay</p>
-            <button className={style.intro_text} onClick={() => setState(state+1)}>no</button>
-            <button className={style.intro_text}>yes</button>
+            <IntroHeader />
+            <Button OnClick={AddProgress}>
+                BEGIN
+            </Button>
         </div>
     )
 }
